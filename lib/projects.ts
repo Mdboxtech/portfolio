@@ -29,7 +29,7 @@ export function getProjectBySlug(slug: string): Project | null {
       content,
       data: data as ProjectMatter,
     }
-  } catch (error) {
+  } catch {
     return null
   }
 }
@@ -49,7 +49,7 @@ export function getAllProjects(): Project[] {
       })
 
     return projects
-  } catch (error) {
+  } catch {
     return []
   }
 }
@@ -60,7 +60,7 @@ export function getAllProjectSlugs(): string[] {
     return fileNames
       .filter((fileName) => fileName.endsWith('.md'))
       .map((fileName) => fileName.replace(/\.md$/, ''))
-  } catch (error) {
+  } catch {
     return []
   }
 }

@@ -98,37 +98,39 @@ export default function ProjectPage({ params }: Props) {
             <ReactMarkdown
               remarkPlugins={[remarkGfm]}
               components={{
-                h2: ({ node, ...props }) => (
+                h2: ({ ...props }) => (
                   <h2 className="text-3xl font-heading font-bold text-gray-900 dark:text-white mt-12 mb-6" {...props} />
                 ),
-                h3: ({ node, ...props }) => (
+                h3: ({ ...props }) => (
                   <h3 className="text-2xl font-heading font-bold text-gray-900 dark:text-white mt-8 mb-4" {...props} />
                 ),
-                p: ({ node, ...props }) => (
+                p: ({ ...props }) => (
                   <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4" {...props} />
                 ),
-                ul: ({ node, ...props }) => (
+                ul: ({ ...props }) => (
                   <ul className="list-disc list-inside space-y-2 mb-6 text-gray-600 dark:text-gray-400" {...props} />
                 ),
-                ol: ({ node, ...props }) => (
+                ol: ({ ...props }) => (
                   <ol className="list-decimal list-inside space-y-2 mb-6 text-gray-600 dark:text-gray-400" {...props} />
                 ),
-                code: ({ node, inline, ...props }: any) =>
-                  inline ? (
-                    <code className="px-2 py-1 rounded bg-gray-100 dark:bg-gray-800 text-primary-600 dark:text-primary-400 text-sm font-mono" {...props} />
+                code: (props) => {
+                  const { inline, ...rest } = props as { inline?: boolean; className?: string; children?: React.ReactNode }
+                  return inline ? (
+                    <code className="px-2 py-1 rounded bg-gray-100 dark:bg-gray-800 text-primary-600 dark:text-primary-400 text-sm font-mono" {...rest} />
                   ) : (
-                    <code className="block p-4 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-gray-100 text-sm font-mono overflow-x-auto" {...props} />
-                  ),
-                pre: ({ node, ...props }) => (
+                    <code className="block p-4 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-gray-100 text-sm font-mono overflow-x-auto" {...rest} />
+                  )
+                },
+                pre: ({ ...props }) => (
                   <pre className="mb-6 rounded-lg overflow-hidden" {...props} />
                 ),
-                a: ({ node, ...props }) => (
+                a: ({ ...props }) => (
                   <a className="text-primary-600 dark:text-primary-400 hover:underline font-medium" {...props} />
                 ),
-                blockquote: ({ node, ...props }) => (
+                blockquote: ({ ...props }) => (
                   <blockquote className="border-l-4 border-primary-500 pl-4 italic text-gray-600 dark:text-gray-400 my-6" {...props} />
                 ),
-                hr: ({ node, ...props }) => (
+                hr: ({ ...props }) => (
                   <hr className="my-12 border-gray-200 dark:border-gray-700" {...props} />
                 ),
               }}

@@ -46,7 +46,7 @@ export default function FeaturedProjects() {
               Featured Projects
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-400">
-              A selection of projects I've built and contributed to
+              A selection of projects I&apos;ve built and contributed to
             </p>
           </div>
           <Link

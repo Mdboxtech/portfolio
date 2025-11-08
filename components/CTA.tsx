@@ -7,10 +7,10 @@ export default function CTA() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-white mb-6">
-            Let's Work Together
+            Let&apos;s Work Together
           </h2>
           <p className="text-lg text-primary-100 mb-8">
-            I'm always interested in hearing about new projects and opportunities. 
+            I&apos;m always interested in hearing about new projects and opportunities. 
             Whether you have a question or just want to say hi, feel free to reach out.
           </p>
           <Link

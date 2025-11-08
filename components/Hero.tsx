@@ -28,7 +28,7 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-lg text-gray-600 dark:text-gray-400 mb-12 max-w-3xl mx-auto leading-relaxed"
           >
-            I'm a Software Engineer passionate about creating fast, secure, and user-focused web applications. 
+            I&apos;m a Software Engineer passionate about creating fast, secure, and user-focused web applications. 
             With hands-on experience collaborating with tech-driven companies, I specialize in backend systems, 
             frontend development, and API integrations.
           </motion.p>

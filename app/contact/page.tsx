@@ -1,7 +1,6 @@
 'use client'
 
 import { useState } from 'react'
-import type { Metadata } from 'next'
 import { Mail, Linkedin, Github, Send, CheckCircle, Phone, MapPin } from 'lucide-react'
 
 export default function Contact() {
@@ -39,8 +38,8 @@ export default function Contact() {
               Get In Touch
             </h1>
             <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-              I'm always interested in hearing about new projects and opportunities. 
-              Feel free to reach out if you'd like to work together.
+              I&apos;m always interested in hearing about new projects and opportunities. 
+              Feel free to reach out if you&apos;d like to work together.
             </p>
           </div>
 
@@ -153,7 +152,7 @@ export default function Contact() {
                       Thank you!
                     </h3>
                     <p className="text-gray-600 dark:text-gray-400">
-                      I'll get back to you soon.
+                      I&apos;ll get back to you soon.
                     </p>
                   </div>
                 ) : (

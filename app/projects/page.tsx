@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { ArrowRight, ExternalLink } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Projects - Muhammad Abdullahi Ali (MD)',
@@ -49,7 +49,7 @@ export default function Projects() {
               My Projects
             </h1>
             <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-              A showcase of web applications and systems I've built, demonstrating my expertise in 
+              A showcase of web applications and systems I&apos;ve built, demonstrating my expertise in 
               full-stack development, API integration, and scalable architecture.
             </p>
           </div>
@@ -111,7 +111,7 @@ export default function Projects() {
                 More Projects Coming Soon
               </h3>
               <p className="text-gray-600 dark:text-gray-400 mb-6">
-                I'm constantly working on new projects and improving my skills. Check back later for more case studies and examples of my work.
+                I&apos;m constantly working on new projects and improving my skills. Check back later for more case studies and examples of my work.
               </p>
               <Link
                 href="/contact"

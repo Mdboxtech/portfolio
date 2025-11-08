@@ -13,7 +13,7 @@ type Skill = {
 
 type SkillCategory = {
   title: string
-  icon: any
+  icon: React.ComponentType<{ className?: string }>
   color: string
   skills: Skill[]
 }

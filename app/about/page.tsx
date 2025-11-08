@@ -26,13 +26,13 @@ export default function About() {
                   </h2>
                 </div>
                 <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
-                  I'm Muhammad Abdullahi Ali, also known as MD, a Software Engineer passionate about building 
+                  I&apos;m Muhammad Abdullahi Ali, also known as MD, a Software Engineer passionate about building 
                   solutions that make a difference. My journey in software development started as a web developer, 
                   where I honed my skills creating dynamic websites and applications. Over time, I evolved into 
                   full-stack development, focusing on robust backend systems and intuitive user interfaces.
                 </p>
                 <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-0">
-                  Throughout my career, I've had the privilege of collaborating with multiple tech-driven companies, 
+                  Throughout my career, I&apos;ve had the privilege of collaborating with multiple tech-driven companies, 
                   building everything from e-commerce platforms to HR management systems and fintech applications. 
                   Each project has strengthened my ability to deliver scalable, secure, and user-focused solutions.
                 </p>
@@ -53,7 +53,7 @@ export default function About() {
                 </p>
                 <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-0">
                   On the frontend, I create responsive, accessible user interfaces using React, Inertia.js, and Tailwind CSS. 
-                  I believe great software isn't just about functionality—it's about delivering an exceptional user experience. 
+                  I believe great software isn&apos;t just about functionality—it&apos;s about delivering an exceptional user experience. 
                   My approach combines technical excellence with user-centered design principles.
                 </p>
               </div>
@@ -68,7 +68,7 @@ export default function About() {
                 <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
                   Beyond technical skills, I bring a problem-solving mindset and a commitment to continuous learning. 
                   I stay updated with industry best practices and emerging technologies, always seeking ways to improve 
-                  my craft. Whether it's optimizing application performance, integrating third-party services, or 
+                  my craft. Whether it&apos;s optimizing application performance, integrating third-party services, or 
                   architecting complex systems, I approach each challenge with curiosity and determination.
                 </p>
                 <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-0">
