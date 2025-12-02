@@ -10,6 +10,8 @@ export type ProjectMatter = {
   date: string
   tags: string[]
   featured: boolean
+  image?: string
+  liveUrl?: string
 }
 
 export type Project = {

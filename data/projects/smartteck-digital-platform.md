@@ -5,6 +5,7 @@ date: "2024-10-15"
 tags: ["Laravel", "React", "Fintech", "Payment Gateway", "REST API", "MySQL"]
 featured: true
 liveUrl: "https://smartteck.ng/"
+image: "/images/smartteck-platform.png"
 ---
 
 ## Overview

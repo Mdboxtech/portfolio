@@ -1,7 +1,8 @@
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
-import { ArrowLeft, Calendar, Tag } from 'lucide-react'
+import { ArrowLeft, Calendar, Tag, ExternalLink } from 'lucide-react'
 import Link from 'next/link'
+import Image from 'next/image'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import { getProjectBySlug, getAllProjectSlugs } from '@/lib/projects'
@@ -67,7 +68,7 @@ export default function ProjectPage({ params }: Props) {
               {project.data.description}
             </p>
 
-            <div className="flex flex-wrap items-center gap-6 text-sm text-gray-600 dark:text-gray-400">
+            <div className="flex flex-wrap items-center gap-6 text-sm text-gray-600 dark:text-gray-400 mb-6">
               <div className="flex items-center gap-2">
                 <Calendar className="w-4 h-4" />
                 <time dateTime={project.data.date}>
@@ -91,6 +92,33 @@ export default function ProjectPage({ params }: Props) {
                 ))}
               </div>
             </div>
+
+            {/* Live URL Button */}
+            {project.data.liveUrl && (
+              <a
+                href={project.data.liveUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-6 py-3 text-base font-medium rounded-lg text-white bg-primary-600 hover:bg-primary-700 transition-colors"
+              >
+                Visit Live Site
+                <ExternalLink className="w-4 h-4" />
+              </a>
+            )}
+
+            {/* Project Image */}
+            {project.data.image && (
+              <div className="mt-8 rounded-xl overflow-hidden shadow-2xl border border-gray-200 dark:border-gray-700">
+                <Image
+                  src={project.data.image}
+                  alt={project.data.title}
+                  width={1200}
+                  height={675}
+                  className="w-full h-auto object-cover"
+                  priority
+                />
+              </div>
+            )}
           </header>
 
           {/* Project Content */}
