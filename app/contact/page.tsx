@@ -41,7 +41,7 @@ export default function Contact() {
           <div className="text-center mb-16">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-500/10 border border-primary-500/20 backdrop-blur-sm mb-6">
               <Mail className="w-4 h-4 text-primary-400" />
-              <span className="text-sm text-primary-300 font-mono">Let's Connect</span>
+              <span className="text-sm text-primary-300 font-mono">Let&apos;s Connect</span>
             </div>
             <h1 className="text-4xl md:text-6xl font-heading font-bold mb-6">
               <span className="bg-gradient-to-r from-white via-primary-200 to-primary-400 bg-clip-text text-transparent">

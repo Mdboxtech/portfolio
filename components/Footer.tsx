@@ -160,7 +160,7 @@ export default function Footer() {
         >
           <div className="flex items-center gap-2 text-xs font-mono text-gray-500">
             <span className="text-primary-400">md@portfolio:~$</span>
-            <span>echo "Thanks for visiting!"</span>
+            <span>echo &quot;Thanks for visiting!&quot;</span>
             <span className="animate-pulse">_</span>
           </div>
         </motion.div>

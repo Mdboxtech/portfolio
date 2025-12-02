@@ -26,14 +26,14 @@ const projects = [
     description: 'Secure Laravel + React dashboard for managing clients, transactions, and reports with advanced caching.',
     tags: ['Laravel', 'React', 'MySQL', 'Inertia.js', 'Caching'],
     slug: 'company-web-management',
-    image: '/projects/project1.jpg',
+    image: '/images/project1.jpg',
   },
   {
     title: 'HR Analytics Dashboard',
     description: 'HR system with Excel import/export, data visualization, and real-time statistics.',
     tags: ['Laravel', 'Inertia.js', 'React', 'Chart.js', 'Excel'],
     slug: 'hr-analytics-dashboard',
-    image: '/projects/project3.jpg',
+    image: '/images/project3.jpg',
   },
 ]
 
